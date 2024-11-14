@@ -21,7 +21,7 @@ function delDist() {
 }
 
 function styles() {
-  return src("app/sass/**/*.sass")
+  return src("app/SASS/**/*.sass")
     .pipe(scss({ outputStyle: "compressed" }))
     .pipe(concat("style.css"))
     .pipe(
@@ -57,7 +57,7 @@ function images() {
 }
 
 function watching() {
-  watch(["app/sass/**/*.sass"], styles);
+  watch(["app/SASS/**/*.sass"], styles);
   watch(["app/*html"]).on("change", browserSync.reload);
 }
 
