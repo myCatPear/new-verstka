@@ -44,6 +44,7 @@ body
         animation-duration: 1.7s
         animation-delay: 1s
         animation-timing-function: ease
+        backface-visibility: hidden
     &__secondary
         display: block
         font-weight: 100    
@@ -54,6 +55,27 @@ body
         animation-duration: 1.7s
         animation-delay: 1s
         animation-timing-function: ease
+        backface-visibility: hidden
+        margin-bottom: 65px
+
+.btn
+    &:link, &:visited
+        text-transform: uppercase
+        text-decoration: none
+        color: #777
+        padding: 15px 40px
+        background: white
+        border-radius: 50px
+        display: inline-block
+        transition: all .3s
+    &:hover
+        transform: translateY(-4px)
+        box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.3))
+    &:active
+        transform: translateY(-2px)
+        box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.1))
+
+
 
 @keyframes  leftToRight
     0%
